@@ -35,10 +35,10 @@ function lastInfo() {
 	} else {
 		last = JSON.parse(cokie.get("runInfo"));
 		console.log("上次访问时间" + last.day);
-		console.log("统计访问次数" + last.cont);
 		last.day = tdate.toLocaleString();
 		last.time = tdate.getTime();
 		if (tdate.getTime() - last.time < 60000) last.cont++; //1分钟之内只统计一次访问次数
+		console.log("统计访问次数" + last.cont);
 		cokie.set("runInfo", JSON.stringify(last));
 	}
 
