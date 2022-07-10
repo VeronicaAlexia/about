@@ -1,3 +1,3 @@
 # New
 Hello World
-http://www.whiteg.cn
+http://about.whiteg.cn
